@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/icon/fill/logo.svg">
+    <title>Portfolio │ 2022 Component Tab-v2</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/portfolio__2022/assets/bootstrap-5.0.2/scss/bootstrap.min.css">
+    <script src="assets/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Project -->
+    <link rel="stylesheet" href="assets/scss/app.min.css">
+
+    <!-- Google API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        *,body,main,p,div,span,a,section {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            text-decoration: none;
+        }
+
+        header {
+            width: 100%;
+            height: 30px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        main {
+            padding: 60px 0;
+            background-color: #f3f3f3;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        footer {
+            background-color: #bbb;
+            padding: 20px;
+        }
+
+        section {
+            width: 768px;
+            margin: 0 auto 60px;
+        }
+
+        /*- タブ  -*/
+
+        .c-tab-v1__tab {
+            width: 100%;
+            display: flex;
+        }
+
+        .c-tab-v1__tab-1d {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, #e0e0e0,5%, #ebebeb);
+            padding: 10px;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            color: #aaa;
+            font-weight: nomal;
+            margin-right: 2px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .c-tab-v1__tab-1d:last-child {
+            margin-right: 0;
+        }
+
+        .c-tab-v1__body {
+            width: 100%;
+        }
+
+        .c-tab-v1__body-1d {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+            display: none;
+            color: #333;
+        }
+
+        .m-active {
+            display: block;
+        }
+
+        .m-activeTab {
+            background: #fff;
+            color: #ff8816;
+            font-weight: bold;
+            z-index: 2;
+            font-size: 16px;
+        }
+    </style>
+ </head>
+<body>
+    <header>
+        <div class="bg-dark">
+          <h1 class="text-center m-0 p-3">
+            <img src="assets/img/icon/fill/logo.svg" alt="">
+            Portfolio.com
+          </h1>
+        </div>
+        
+        <!-- navbar section start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg__gray-dark-deep">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile/index.html">Profile</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Design
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">UI</a></li>
+                    <li><a class="dropdown-item" href="#">Graphic</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Skill
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Tool │ 設計時に使用するツール</a></li>
+                    <li><a class="dropdown-item" href="#">Language │ 言語</a></li>
+                    <li><a class="dropdown-item" href="#">Design consept │ 設計思想</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Photograph
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Portrait　│ 人物写真</a></li>
+                    <li><a class="dropdown-item" href="#">Landscape │ 風景写真</a></li>
+                    <li><a class="dropdown-item" href="#">Product photo │ 商品写真</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+  
+      </header>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <div>
+                        <p>13インチ</p>
+                    </div>
+                    <div>
+                        <p>14インチ</p>
+                    </div>
+                    <div>
+                        <p>16インチ</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p></p>
+                    </div>
+                    <div>
+                        <p></p>
+                    </div>
+                    <div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-0">
+            <div class="c-tab-v1">
+                <div class="c-tab-v1__tab">
+                    <div class="c-tab-v1__tab-1d m-activeTab">
+                        <p>2Tab Text A</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>2Tab Text B</p>
+                    </div>
+                </div>
+                <div class="c-tab-v1__body">
+                    <div class="c-tab-v1__body-1d m-active">
+                        <div class="c-tab-v1__body-2d">
+                            <p>2Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>2Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>2Tab Body Contents A</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>2Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>2Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>2Tab Body Contents B</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-1">
+            <div id="c-3Tab-v1" class="c-tab-v1">
+                <div class="c-tab-v1__tab">
+                    <div class="c-tab-v1__tab-1d m-activeTab">
+                        <p>3Tab Text A</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>3Tab Text B</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>3Tab Text C</p>
+                    </div>
+                </div>
+                <div class="c-tab-v1__body">
+                    <div class="c-tab-v1__body-1d m-active">
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents A</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents B</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents C</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents C</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>3Tab Body Contents C</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-2">
+            <div class="c-tab-v1">
+                <div class="c-tab-v1__tab">
+                    <div class="c-tab-v1__tab-1d m-activeTab">
+                        <p>4Tab Text A</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>4Tab Text B</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>4Tab Text C</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>4Tab Text D</p>
+                    </div>
+                </div>
+                <div class="c-tab-v1__body">
+                    <div class="c-tab-v1__body-1d m-active">
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents A</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents B</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents C</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents C</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents C</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents D</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents D</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>4Tab Body Contents D</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-3">
+            <div class="c-tab-v1">
+                <div class="c-tab-v1__tab">
+                    <div class="c-tab-v1__tab-1d m-activeTab">
+                        <p>5Tab Text A</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>5Tab Text B</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>5Tab Text C</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>5Tab Text D</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>5Tab Text E</p>
+                    </div>
+                </div>
+                <div class="c-tab-v1__body">
+                    <div class="c-tab-v1__body-1d m-active">
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents A</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents B</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents C</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents C</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents C</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents D</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents D</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents D</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents E</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents E</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>5Tab Body Contents E</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-4">
+            <div class="c-tab-v1">
+                <div class="c-tab-v1__tab">
+                    <div class="c-tab-v1__tab-1d m-activeTab">
+                        <p>6Tab Text A</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>6Tab Text B</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>6Tab Text C</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>6Tab Text D</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>6Tab Text E</p>
+                    </div>
+                    <div class="c-tab-v1__tab-1d">
+                        <p>6Tab Text F</p>
+                    </div>
+                </div>
+                <div class="c-tab-v1__body">
+                    <div class="c-tab-v1__body-1d m-active">
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents A</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents A</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents B</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents B</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents C</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents C</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents C</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents D</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents D</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents D</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents E</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents E</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents E</p>
+                        </div>
+                    </div>
+                    <div class="c-tab-v1__body-1d">
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents F</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents F</p>
+                        </div>
+                        <div class="c-tab-v1__body-2d">
+                            <p>6Tab Body Contents F</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="px-3 py-1 bg-gray-1" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item text-black"><a class="text-blue" href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">プロフィール</li>
+          </ol>
+        </nav>
+        <div class="d-flex justify-content-center pt-3 border-top">
+          <a class="px-2" href="">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="px-2" href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a class="px-2" href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="px-2" href="https://www.youtube.com/">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+        <p class="d-flex justify-content-center pb-3 pt-1 footer__text">Copyright © 2022 Baespt. All Rights Reserved.</p>
+      </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script>
+        //タブ--v1
+        $('.c-tab-v1__tab-1d').click(
+            function(){
+                var clickedIndex = $(this).parent().children('.c-tab-v1__tab-1d').index(this);
+
+                $(this).parent().children('.c-tab-v1__tab-1d').removeClass('m-activeTab');
+                $(this).parents('.c-tab-v1').find('.c-tab-v1__body-1d').removeClass('m-active');
+                $(this).parent().children('.c-tab-v1__tab-1d').eq(clickedIndex).addClass('m-activeTab');
+                $(this).parents('.c-tab-v1').find('.c-tab-v1__body-1d').eq(clickedIndex).addClass('m-active');
+        });
+    </script>
+
+</body>
+</html>
