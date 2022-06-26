@@ -1,0 +1,9 @@
+@import "../../../assets/scss/object/utility/_color";
+
+header {
+    background-color: $black;
+}
+
+header>div>a>span {
+    color: $skyblue!important;
+}

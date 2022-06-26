@@ -1,0 +1,62 @@
+@import "../../../../assets/scss/object/utility/_color";
+
+p {
+    font-size: 14px;
+    color: $text-main;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: $skyblue;
+    margin-top: -8px;
+    margin-right: 30px;
+    img {
+        width: 50px;
+        margin-right: 10px;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    color: $text-main;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+  font-size : 16px;
+  font-weight: 200;
+}
+
+.text-black {
+    color: $text-main;
+}
+
+.text-gray {
+    color: $text-sub;
+}
+
+.text-coral {
+    color:$coral;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-white {
+    color: $skyblue;
+}
+
+.text-copy-1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Noto sans-serif JP', sans-serif;
+}
+
+.text-copy-2 {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Noto sans-serif JP', sans-serif;
+}

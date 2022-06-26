@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="flexLineIcon-key" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M267.4,278H32.2c-6.6,0-12-5.4-12-12V129.1c0-6.6,5.4-12,12-12h235.2c6.6,0,12,5.4,12,12V266
+	C279.4,272.6,274,278,267.4,278z"/>
+<g>
+	<path class="st0" d="M87.1,84.2c0-34.6,28.1-62.7,62.7-62.7s62.7,28.1,62.7,62.7"/>
+	<line class="st0" x1="87.1" y1="84.2" x2="87.1" y2="114.7"/>
+	<line class="st0" x1="212.4" y1="84.2" x2="212.4" y2="114.7"/>
+</g>
+<circle class="st0" cx="149.8" cy="197.6" r="29.4"/>
+</svg>

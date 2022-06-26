@@ -1,0 +1,12 @@
+@import "../../../assets/scss/object/utility/_color";
+
+main {
+    background-color: $white;
+}
+
+#clouds {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
