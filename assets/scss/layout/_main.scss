@@ -1,12 +1,14 @@
 @import "../../../assets/scss/object/utility/_color";
+@import "../../../assets/scss/foundation/_mixin";
 
 main {
     background-color: $white;
+    
 }
 
 #clouds {
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 100vh!important;
     margin: 0;
 }

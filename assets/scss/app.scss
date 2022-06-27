@@ -1,29 +1,29 @@
 // Foundation
 // ==========================================================================
 
-@import "foundation/_reset";
-@import "foundation/_base";
-@import "foundation/_mixin";
+@use "foundation/_reset";
+@use "foundation/_base";
+@use "foundation/_mixin";
 
 // Layout
 // ==========================================================================
 
-@import "layout/_main";
-@import "layout/_header";
-@import "layout/_footer";
-@import "layout/_container";
+@use "layout/_main";
+@use "layout/_header";
+@use "layout/_footer";
+@use "layout/_container";
 
 // Object
 // ==========================================================================
 
-    // Component
-    // -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
 
-    @import "object/component/_button";
+@use "object/component/_button";
 
-    // Utility
-    // -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
 
-    @import "object/utility/_text";
-    @import "object/utility/_color";
-    @import "object/utility/_background";
+@use "object/utility/_text";
+@use "object/utility/_color";
+@use "object/utility/_background";
