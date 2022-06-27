@@ -10,6 +10,8 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="../assets/bootstrap-5.0.2/scss/bootstrap.min.css">
         <script src="../assets/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
         <!-- Project -->
         <link rel="stylesheet" href="../assets/scss/app.min.css">
@@ -122,6 +124,45 @@
             font-size: 16px;
             margin: 0;
             color: #0066CC!important;
+        }
+
+         /*--btn--*/
+         .btnPrimary {
+             background-color: #0066CC;
+             padding: 10px;
+             color: #fff;
+             border: 1px solid #fff;
+             border-radius: 20px;
+         }
+
+         .btnSecondary {
+             background-color: #0066CC;
+             padding: 10px;
+             color: #fff;
+             border: 1px solid #0066CC;
+             border-radius: 20px;
+         }
+
+        /*--modalv1--*/
+        .c-modal-v1__bg {
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.50);
+            z-index: 3;
+        }
+
+        .c-modal-v1__wrapper {
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.5);
+            position: fixed;
+            visibility: hidden;
+        }
+
+        .c-modal-v1__body {
+            background-color: #fff;
+            
         }
 
     </style>
@@ -522,6 +563,21 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="c-modal-v1__root">
+                <a href="" class="c-modal-v1__trigger btnPrimary">モーダル用ボタン</a>
+                <div class="c-modal-v1__wrapper">
+                    <div class="c-modal-v1__body">
+                        <div class="c-modal-v1__close">✖️</div>
+                        <p>モーダル内テキストコンテンツ</p>
+                        <div class="d-flex justify-content-space-between">
+                            <a href="" class="btnPrimary">プライマリ</a>
+                            <a href="" class="btnSecondary">セカンダリ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <nav class="px-3 py-1 bg-gray-1" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -545,29 +601,14 @@
             <i class="fa-brands fa-youtube"></i>
           </a>
         </div>
-        <p class="d-flex justify-content-center pb-3 pt-1 footer__text">Copyright © 2022 Baespt. All Rights Reserved.</p>
+        <p class="d-flex justify-content-center pb-3 pt-1 footer__text">Copyright © 2022 Hiroki Abe. All Rights Reserved.</p>
       </footer>
 
-    <script
+      <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
-
-    <script>
-        //タブ--v1
-        $('.c-tab-v1__tab-1d').click(
-            function(){
-                
-                var $tabV1 = $(this).parent().children('.c-tab-v1__tab-1d');
-                var $bodyV1 = $(this).parents('.c-tab-v1').find('.c-tab-v1__body-1d');
-                var clickedIndex = $tabV1.index(this);
-
-                $tabV1.removeClass('m-activeTab');
-                $bodyV1.removeClass('m-active');
-                $tabV1.eq(clickedIndex).addClass('m-activeTab');
-                $bodyV1.eq(clickedIndex).addClass('m-active');
-        });
-    </script>
+        <script src="../assets/js/component.js"></script>
 
 </body>
 </html>
