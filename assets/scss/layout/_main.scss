@@ -3,7 +3,9 @@
 
 main {
     background-color: $white;
-    
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
 }
 
 #clouds {
@@ -11,4 +13,16 @@ main {
     place-items: center;
     height: 100vh!important;
     margin: 0;
+}
+
+.flex-justify-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:991px) {
+    .flex-justify-switch {
+        flex-direction: column-reverse;
+    }
 }

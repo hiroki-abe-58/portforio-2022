@@ -1,0 +1,85 @@
+/*
+.glass-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass-bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(121, 209, 65),rgb(187, 231, 178));
+    clip-path: circle(45% at 20% 34%);
+    backdrop-filter: blur(30px);
+}
+
+.glass-bg::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(121, 209, 65),rgb(187, 231, 178));
+    clip-path: circle(35.4% at 100% 100%);
+    z-index: -4;
+}
+*/
+
+.glass__card {
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-left: 1px solid rgba(255,255,255,.5);
+    width: 270px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,.5);
+    background: rgba(255,255,255,.1);
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    .glass__card--content {
+        padding: 20px;
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit:cover;
+            margin-bottom: 16px;
+        }
+        h3 {
+            transform: translateZ(100px);
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            font-weight: 400;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        h4 {
+            color: #dddddd;
+            margin-top: 0px;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            font-weight: 100;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        p {
+            color: #bbbbbb;
+            font-size: 1rem;
+            font-weight: 100;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        a {
+            background: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 20px;
+            color: #356f4a;
+            border-radius: 20px;
+            box-shadow: rgba(0,0,0,.5);
+            font-weight: 100;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+}

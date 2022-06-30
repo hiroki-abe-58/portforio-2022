@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/icon/fill/logo.svg">
+    <title>Portfolio │ SVG</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2/scss/bootstrap.min.css">
+    <script src="assets/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Project -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="assets/less/less.css">
+
+    <!-- Google API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Flex movie -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.22/dist/vanta.clouds.min.js"></script>
+    
+    <!-- Font-awefome -->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+</head>
+<body>
+    <header></header>
+    <main>
+        <nav class="p-3 py-1 bg-dark" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item text-black"><a class="text-blue" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">SVG</li>
+            </ol>
+        </nav>
+      <section class="bg-dark p-5">
+          <div class="d-flex flex-column mb-5">
+            <h2 class="mb-1 copy-big text-nowrap text-center text-gradient-dark mb-3">
+              SVG</span>
+            </h2>
+            <p class="mb-3 text-copy-2 text-dark-sub text-center mb-5">
+              SVGを使えば、8Kになろうが、800Kになろうが<br>二度と解像度に悩まされることはない！！
+            </p>
+            <p class="text-dark-white-sub text-center">
+                Google Fontsよりもfont-awesomeよりも使いやすい！<br>
+                クラス名を変えるだけで色と線を変更できる！
+            </p>
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <span class="border-1px w-25"></span>
+          </div>
+      </section>
+      <section class="bg-dark p-5">
+        <div class="d-flex flex-column align-items-center">
+          <p class="mb-3 text-copy-2 text-dark-sub">Stroke Icons</p>
+          <p class="text-dark-white-sub mb-5">
+            SVGをStrokeで作成することで、CSSから色や太さを操作できる。
+          </p>
+        </div>
+        <div class="row mb-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                <svg class="stroke-white-5px"> 
+                    <use xlink:href="assets/img/icon/outline/flexLineIcon-account.svg#flexLineIcon-account"></use>
+                </svg>
+                <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                    .stroke-white-5px
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                <svg class="stroke-white-15px">
+                    <use xlink:href="assets/img/icon/outline/flexLineIcon-account.svg#flexLineIcon-account"></use>
+                </svg>
+                <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                    .stroke-white-15px
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                <svg class="stroke-white-20px">
+                    <use xlink:href="assets/img/icon/outline/flexLineIcon-account.svg#flexLineIcon-account"></use>
+                </svg>
+                <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                    .stroke-white-20px
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                <svg class="stroke-white-35px">
+                    <use xlink:href="assets/img/icon/outline/flexLineIcon-account.svg#flexLineIcon-account"></use>
+                </svg>
+                <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                    .stroke-white-35px
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-orange-5px"> 
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-account.svg#flexLineIcon-account"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                    .stroke-orange-5px
+                </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-orange-15px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-account.svg#flexLineIcon-account"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                    .stroke-orange-15px
+                </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-orange-20px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-account.svg#flexLineIcon-account"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                    .stroke-orange-20px
+                </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-orange-35px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-account.svg#flexLineIcon-account"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                    .stroke-orange-35px
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-white-5px"> 
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-key.svg#flexLineIcon-key"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                      .stroke-white-5px
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-white-15px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-key.svg#flexLineIcon-key"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                      .stroke-white-15px
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-white-20px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-key.svg#flexLineIcon-key"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                      .stroke-white-20px
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-white-35px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-key.svg#flexLineIcon-key"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                      .stroke-white-35px
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-orange-5px"> 
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-key.svg#flexLineIcon-key"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                      .stroke-orange-5px
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-orange-15px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-key.svg#flexLineIcon-key"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                      .stroke-orange-15px
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-orange-20px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-key.svg#flexLineIcon-key"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                      .stroke-orange-20px
+                  </p>
+              </div>
+              <div class="col-lg-3 col-md-12 d-flex flex-column align-items-center">
+                  <svg class="stroke-orange-35px">
+                      <use xlink:href="assets/img/icon/outline/flexLineIcon-key.svg#flexLineIcon-key"></use>
+                  </svg>
+                  <p class="text-dark-white-sub mt-3 d-flex justify-content-center align-items-center">
+                      .stroke-orange-35px
+                  </p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      
+    </main>
+
+    <footer>
+        <nav class="px-3 py-1 bg-gray-1" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item text-black"><a class="text-blue" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">SVG</li>
+            </ol>
+        </nav>
+        <div id="footer__bottom"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      //tab--v1
+      $('.c-tab-v1__tab-1d').click(
+       function(){
+           var $tabV1_Root = $(this).parents('.c-tab-v1');
+           var tabV1_clickedIndex = $tabV1_Root.find('.c-tab-v1__tab-1d').index(this);
+           $tabV1_Root.find('.c-tab-v1__tab-1d').removeClass('m-activeTab').eq(tabV1_clickedIndex).addClass('m-activeTab');
+           $tabV1_Root.find('.c-tab-v1__body-1d').removeClass('m-active').eq(tabV1_clickedIndex).addClass('m-active');
+     });
+   </script>
+    <script src="assets/js/include.js"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+</html>

@@ -1,9 +1,13 @@
 @import "../../../assets/scss/object/utility/_color";
 
 footer {
-    background-color: #f5f5f7;
+    display: block;
+    position: relative;
+    z-index: 1;
+    background-color: #000000;
     color: $text-sub;
     font-size: 12px;
+    bottom: 0;
     div {
       a{
         i {

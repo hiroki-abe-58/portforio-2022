@@ -1,0 +1,46 @@
+/*- タブ--v1  -*/
+
+.c-tab-v1__tab {
+    width: 100%;
+    display: flex;
+}
+
+.c-tab-v1__tab-1d {
+    background: linear-gradient(to top, #e0e0e0,5%, #ebebeb);
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    color: #aaa;
+    font-weight: nomal;
+    margin-right: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.c-tab-v1__tab-1d:last-child {
+    margin-right: 0;
+}
+
+.c-tab-v1__body {
+    width: 100%;
+}
+
+.c-tab-v1__body-1d {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    color: #333;
+}
+
+.m-active {
+    display: block;
+}
+
+.m-activeTab {
+    display: block;
+    background: #fff;
+    color: #ff8816;
+    font-weight: bold;
+    z-index: 2;
+}

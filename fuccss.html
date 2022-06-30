@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/icon/fill/logo.svg">
+    <title>Portfolio │ 2022</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2/scss/bootstrap.min.css">
+    <script src="assets/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Project -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="assets/less/less.css">
+
+    <!-- Google API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Flex movie -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.22/dist/vanta.clouds.min.js"></script>
+    
+    <!-- Font-awefome -->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+</head>
+<body>
+    <header></header>
+    <main>
+        <nav class="p-3 py-1 bg-dark" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item text-black"><a class="text-blue" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">FUCCSS</li>
+            </ol>
+        </nav>
+      <section class="bg-dark p-5">
+          <div class="d-flex flex-column mb-5">
+            <h2 class="mb-1 copy-big text-nowrap text-center text-gradient-dark">
+              FUCCSS</span>
+            </h2>
+            <p class="mb-5 text-copy-2 text-gradient-dark text-nowrap text-center">
+                フークス
+            </p>
+            <p class="mb-3 text-copy-2 text-dark-sub text-nowrap text-center">
+              素人でも5分で理解できる設計思想。
+            </p>
+            <p class="text-dark-white-sub text-center">
+                世界で唯一、<a class="link-white" href="https://github.com/hiloki/flocss">日本語公式ドキュメント</a>があるFLOCSS。<br>
+                FLOCSSには理解が難しいところと問題点があり、<br>
+                日本中で俺流FLOCSSが生まれている。<br>
+                しかし、そのどれもが素の設計思想より複雑であり、学習コスト増大の問題を孕んでいる。<br>
+                そこで、以下のようにシンプルな解決を提案する。
+            </p>
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+            <span class="border-1px w-25"></span>
+          </div>
+      </section>
+
+      <section class="bg-dark p-5">
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+                <p class="mb-3 text-copy-2 text-dark-sub">
+                    分類は、たったの3つ。<br>
+                    紛らわしいこと抜きで行こう！
+                </p>
+
+                <p class="fw-bold text-dark-sub mb-1">・Foundation</p>
+                <div class="mb-3 ms-3">
+                    <p class="text-dark-white-sub mb-3 ms-3">
+                        全ページに影響するコード
+                    </p>
+                </div>
+
+                <p class="fw-bold text-dark-sub mb-1">・Component</p>
+                <div class="mb-3 ms-3">
+                    <p class="text-dark-white-sub mb-3 ms-3">
+                        ボタンなど機能のある要素
+                    </p>
+                </div>
+
+                <p class="fw-bold text-dark-sub mb-1">・Utility</p>
+                <div class="mb-3 ms-3">
+                    <p class="text-dark-white-sub mb-5 ms-3">
+                        マージンやボーダーなど機能のない要素
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="bg__black rounded p-3 h-100 d-flex align-items-center">
+                    <p class="text-white">
+                        ・Foundation<br>
+                        └_base.scss<br>
+                        └_reset.scss<br>
+                        └_mixin.scss<br><br>
+            
+                        ・Utility<br>
+                        └_sizing.scss<br>
+                        └_text.scss<br>
+                        └_color.scss<br><br>
+            
+                        ・Component<br>
+                        └_header.scss<br>
+                        └_footer.scss<br>
+                        └_table.scss<br>
+                        └_button.scss<br>
+                        └_button.scss<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p class="mb-5 text-copy-2 text-dark-sub">
+            FLOCSSとの差分
+        </p>
+        <div class="row mb-5">
+                <div class="col-lg-4 col-md-12">
+                    <p class="fw-bold text-dark-sub mb-1">・ProjectはComponentに統合。</p>
+                    <span class="mb-3">
+                        <p class="text-dark-white-sub mb-3 ms-3">
+                            FLOCSSを調べると<br>
+                            ProjectとCompornentの差で悩んでいる記事が<br>あまりに多くサジェストされる。<br>
+                            現在落とし所としてメジャーな基準は<br>
+                            <a class="link-white" href="https://qiita.com/Atsss/items/4f9d98fb1d0546539c09">
+                                同プロダクトで4回以上出てきたらComponentに分類する
+                            </a>ものだ。<br>
+                            しかし、プロダクト内で出てくる回数は変動するに決まっているため<br>
+                            この考え方は破綻している。<br>
+                            よって、Projectを削除し、Componentに統合した。
+                        </p>
+                    </span>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <p class="fw-bold text-dark-sub mb-1">・Layoutはほぼ無いのでComponentに統合</p>
+                    <span class="mb-3">
+                        <p class="text-dark-white-sub mb-3 ms-3">
+                            Layoutの概念もComponentとそっくりな上header/footerぐらいしかないため<br>
+                            このためだけにディレクトリを切らない方がいい。<br>
+                            <a class="link-white" href="https://twitter.com/hiloki/status/862345270951936001?ref_src=twsrc%5Etfw">作者も「Lいらない」と発言している。</a>
+                        </p>
+                    </span>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <p class="fw-bold text-dark-sub mb-1">・Objectを削除</p>
+                    <span class="mb-3">
+                        <p class="text-dark-white-sub mb-3 ms-3">
+                            すると、Objectに格納されるのはComponent/Utilityしかないので<br>
+                            Objectを削除。
+                        </p>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+        <span class="border-1px w-25"></span>
+        </div>
+      </section>
+      <section class="bg__black p-5">
+        <div class="d-flex flex-column mb-5">
+          <h2 class="mb-1 copy-big text-nowrap text-center text-gradient-dark">
+            BEdM</span>
+          </h2>
+          <p class="mb-5 text-copy-2 text-gradient-dark text-nowrap text-center">
+              べドム
+          </p>
+          <p class="mb-3 text-copy-2 text-dark-sub text-nowrap text-center">
+            二度とゴチャゴチャしない命名規則
+          </p>
+          <p class="text-dark-white-sub text-center">
+              FLOCSSで採用されている命名規則、mindBEMding。<br>
+              以下のように命名するとされているが<br>
+                block(母要素)__element(子要素)--modifire(状態)<br>
+                可読性に問題があった。
+          </p>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+          <span class="border-1px w-25"></span>
+        </div>
+    </section>
+      <section class="bg__black p-5">
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center mb-md-2">
+                <p class="mb-3 text-copy-2 text-dark-sub">
+                    多階層化すると<br>
+                    <span class="text-white">mindBEMding</span>は<br>とにかく読みづらい。
+                </p>
+                <p class="text-dark-white-sub">
+                    解決策として「element-child」のようにするものがメジャーだが<br>
+                    これが多階層化した場合、以下のように子要素の文字数が増え<br>
+                    解決に至っていない。<br>
+                    「element-grand-child」<br>
+                    「element-great-child<br>
+                    「element-great-great-child」<br>
+                    「element-great-great-great-child」<br>
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="poLvwxd" data-user="hiroki-abe-58" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/hiroki-abe-58/pen/poLvwxd">
+                    Untitled</a> by hiroki_abe (<a href="https://codepen.io/hiroki-abe-58">@hiroki-abe-58</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center mb-md-2">
+                <p class="mb-3 text-copy-2 text-dark-sub text-nowrap">
+                    <span class="text-white">親等</span>の数え方を応用して<br>スッキリ!!。
+                </p>
+                <p class="text-dark-white-sub">
+                    英語にすると以下<br>
+                    a relative in the 1st degree<br>
+                    a relative in the 2nd degree<br>
+                    a relative in the 3rd degree<br><br>
+
+                    略して<span class="text-white">-1d -2d -3d -4d</span>のように命名することで。<br>
+                    長大化の問題は解決した。
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="eYMmRBG" data-user="hiroki-abe-58" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/hiroki-abe-58/pen/eYMmRBG">
+                    Untitled</a> by hiroki_abe (<a href="https://codepen.io/hiroki-abe-58">@hiroki-abe-58</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+            </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer>
+        <nav class="px-3 py-1 bg-gray-1" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item text-black"><a class="text-blue" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">FUCCSS</li>
+            </ol>
+        </nav>
+        <div id="footer__bottom"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+</html>

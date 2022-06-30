@@ -15,209 +15,492 @@
     
     <!-- Project -->
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="assets/less/less.css">
 
     <!-- Google API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600&display=swap" rel="stylesheet">
 
     <!-- Flex movie -->
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.22/dist/vanta.clouds.min.js"></script>
+    
+    <!-- Font-awefome -->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
 </head>
 <body>
-    <header>
-      <div class="bg-dark">
-        <a href="">
-          <h1 class="text-center m-0 p-3">
-            <img src="assets/img/icon/fill/logo.svg" alt="">
-            Portfolio.com
-          </h1>
-        </a>
-      </div>
-      
-      <!-- navbar section start -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg__gray-dark-deep">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="profile/index.html">Profile</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Design
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">UI</a></li>
-                  <li><a class="dropdown-item" href="#">Graphic</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Skill
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="tools.html">Tool │ 設計時に使用するツール</a></li>
-                  <li><a class="dropdown-item" href="#">Language │ 言語</a></li>
-                  <li><a class="dropdown-item" href="#">Design consept │ 設計思想</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Photograph
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Portrait　│ 人物写真</a></li>
-                  <li><a class="dropdown-item" href="#">Landscape │ 風景写真</a></li>
-                  <li><a class="dropdown-item" href="#">Product photo │ 商品写真</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <header></header>
+    <main>
+      <section id="clouds">
+          <div class="d-flex flex-column fadeStrong">
+            <h2 class="mb-4 copy-big text-white text-center">
+              <span class="text-gradient-dark">Mellow,</span><br>world!
+            </h2>
+            <p class="text-copy-2 text-dark-sub text-center">
+              Hiroki Abe 2022 Skill Sheet
+            </p>
+          </div> 
+          <div class="fadeStrong">
+            <a href="#section__profile">
+              <i class="fa-solid fa-angles-down"></i>
+            </a>
+          </div>
+      </section>
+
+      <section id="section__profile" class="p-5 bg__glass">
+        <h2 class="mb-3 headline mt-n3 text-center text-white fadeStrong">
+          <span class="text-gradient-dark">芸術大</span>卒の<br>デザインエンジニア
+        </h2>
+        <p class="text-copy-2 text-center text-dark-white-sub fw-bold mb-5 fadeStrong">だから、デザイン力に裏打ちアリ。<br>アーティストのように<br>
+          <span class="text-white">言葉にならない想い</span>まで形にしたい。</p>
+        <div class="d-flex justify-content-center fadeStrong">
+            <div class="glass__card">
+                <div class="glass__card--content">
+                    <img src="assets/img/prof.png" alt="ポートレート">
+                    <h3>Hiroki Abe</h3>
+                    <h4>Web Design Engineer</h4>
+                    <span class="border-1px w-25 d-flex mx-auto mb-4"></span>
+                    <p class="text-dark-white-sub">
+                      UX Planning<br>
+                      UI Design<br>
+                      Prototyping<br>
+                      Develop<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="section__html" class="p-5 bg__black">
+        <div class="row fadeLeft">
+          <div class="col-lg-6 d-flex flex-column justify-content-center mb-5 align">
+            <h2 class="mb-3 headline mt-n3 text-break text-white align-self-stretch">
+              超わかりやすい<br>
+              <span class="text-gradient-dark">HTML</span>設計。
+            </h2>
+            <p class="text-copy-2 text-dark-white-sub fw-bold mb-5">
+              HTMLを甘く見てると後で泣く。<br>
+              <span class="text-white">独自の設計思想</span>で、使いやすさに自信アリ。
+            </p>
+            <a class="button-primary" href="fuccss.html">詳しく見る</a>
+          </div>
+
+          <div class="col-lg-6 row skillWrapper">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3 w-100">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">設計思想</span>FUCCSS</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">FLOCSS/MindBemdingを改善。これらを基に考えた思想。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">設計思想</span>FLOCSS</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">設計思想の中で唯一公式の日本語テキストがあるため安心し使用できる。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">設計思想</span>Grid Layout</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">Bootstrapのコンポーネントを使う機会は少ないが、グリッドシステムはよく利用する。グリッドレイアウトと<a class="link-white" href="https://ameblo.jp/ca-1pixel/entry-11837685575.html">8の倍数でのデザイン</a>でのデザイン設計を大切にしている。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">メタ言語</span>XHTML</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">かなり古い記法をしないと動かないメーラーがあるため、1999年版をメールマガジンで使用。メディアクエリなしでレスポンシブデザインを実現した。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">メタ言語</span>XML</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">React内のソースコードを修正するため使用した。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">拡張機能</span>Emmet</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">ヘビーユースしている爆速化拡張機能！スピードに自信あり！</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+      </section>
 
-    </header>
-    <main>
-      <div id="clouds">
-        <h2 class="text-copy-1 text-white">NEXT GENERATION</h2>
-        <p class="text-white">Life is like riding a bicycle. To keep your balance you must keep moving.</p>
+      <section class="p-5 bg__pic">
+        <div class="flex-justify-switch fadeRight">
+          <div class="col-lg-6 row skillWrapper">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">メタ言語</span>SCSS</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">CSSのメタ言語。<br>とにかく修正が楽で読みやすいので広めたい。<br>VScodeからLive Sass compilerを使ってコンパイルしている。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">メタ言語</span><span class="less-A1">LESS</span></p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">CSSのメタ言語。<br>SCSSとほとんど同じなのに日本語のドキュメントが少ないため、現在使うことはない。<br>VS codeからEasy LESSを使ってコンパイルして使用している。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">フレームワーク</span>Bootstrap</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">SCSSが出来るため、プロジェクトテーマに合わせてデザインを改造して使用できる。<br>既存コンポーネントはあまり使用しない。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">フレームワーク</span>Tailwind</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">こちらもプロジェクトテーマに合わせて改造して使用できるが、<br>自由度が高いためその出番はないと思っている。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">フレームワーク</span>Admin LTE</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">現場で使用する機会があるとのことで学習した。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center mb-5 align">
+            <h2 class="mb-3 headline mt-n3 text-break text-end text-white">
+              プロジェクトの進化を支える<span class="text-gradient-dark">CSS</span>
+            </h2>
+            <p class="text-copy-2 text-dark-white-sub fw-bold text-end">
+              長大化してしまいがちなCSS<br>
+              <span class="text-white">高い検索性</span>と<span class="text-white">自由の効く構造</span>で長大化を防ぐ<br>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-5 bg__black">
+        <div class="row fadeLeft">
+          <div class="col-lg-6 d-flex flex-column justify-content-center mb-5 align">
+            <h2 class="mb-3 headline mt-n3 text-break text-white align-self-stretch">
+              <span class="text-gradient-dark">JavaScript</span>系も<br>時代の先端へ。
+            </h2>
+            <p class="text-copy-2 text-dark-white-sub fw-bold">いつまでもjQueryを使っていられない！<br>次を鋭意勉強中。</p>
+          </div>
+
+          <div class="col-lg-6 row skillWrapper">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">フレームワーク</span>jQuery</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">一番使い慣れている。<br>これを使って自作コンポーネントを制作し、流用できるようにするなど、馴染みと愛着があるため、オワコンと言われ言われると寂しい。</p>
+                  <a class="button-secondary" href="jquery.html">詳しく見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">フレームワーク</span>Vue</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">現在jQueryから移行するため勉強中</p>
+                  <a class="button-secondary" href="vue.html">詳しく見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">フレームワーク</span>React</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">業務で必要なタイミングがあり学習した。今年はこれを使ってアプリを制作してみたいと考えている。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="m-1 bg-white-15 rounded skillBox">
+                <div class="p-3">
+                  <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">言語</span>Node.js</p>
+                  <p class="paragraph-card text-dark-white-sub mb-3">サーバーサイドも理解しておきたいため勉強中。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-5 bg__svg">
+        <div class="column mb-5 fadeRight">
+          <h2 class="mb-3 headline mt-n3 text-center text-white">
+            100年先も戦える<span class="text-gradient-dark">SVG</span>
+          </h2>
+          <p class="text-copy-2 text-dark-white-sub text-center fw-bold mb-5">
+            4K対応?次は8K?、もう嫌だ!<br>二度と<span class="text-white">解像度に悩まされない</span>自由な時代を創る。
+          </p>
+
+          <span class="d-flex justify-content-center">
+            <a class="button-primary text-center" href="svg.html">詳しく見る</a>
+          </span>
+
+        </div>
+      </section>
+
+      <section class="p-5 bg__black">
+        <div class="column mb-5 fadeBox">
+          <h2 class="mb-3 headline mt-n3 text-center text-white">
+            <span class="text-gradient-dark">使用ツール</span>はメジャー寄り。
+          </h2>
+          <p class="text-copy-2 text-dark-white-sub text-center fw-bold">
+            シェアが多いツールを使うのがモットー<br>
+            <span class="text-white">Apple信者</span>であることを除けば...。
+          </p>
+          <p class="font-nomal text-dark-white-sub text-center mt-3">※Windowsが使えない訳ではない</p>
+        </div>
+
+        <div class="row fadeBox">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Illustrator</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">大学一年生よりヘビーユース、歴10年以上。XD登場以前はwebデザインツールとしても使用していた。今後もアイコン制作などで利用価値が高いため、広くIllustratorの素晴らしさを広めたいと思っている。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Photoshop</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">大学一年生よりヘビーユース、歴10年以上だが、webならあらゆる面でXDの方が優れていると思うため、できれば画像編集を除くwebデザインでは使用したくない。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>XD</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">企画時にヘビーユース。プロジェクトメンバーとのコミュニケーションもとりやすいため、初期段階では必ず利用している。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Prott</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">前職で使用経験あり、現在はXDを使用しているため利用機会はない。<br><a class="link-white" href="https://prottapp.com/p/ad4ad6">こういうプロトタイプ</a>が作れる。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Premiere</p>
+                <p class="paragraph-card text-dark-white-sub">簡単な動画編集ができる。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>After Effects</p>
+                <p class="paragraph-card text-dark-white-sub">簡単な動画編集ができる。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Lightroom</p>
+                <p class="paragraph-card text-dark-white-sub">実は非常に得意。SONYのフルサイズ高画質機「α7RⅢ」や、純正レンズ最高級ライン「G-master」など、撮影機材を多数保有しており、撮影の仕事も請けているため、いつでも頼んでほしい。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>VScode</p>
+                <p class="paragraph-card text-dark-white-sub">メインで使用。選べるならVScodeを使いたい。<br>他に使用経験があるのは・Sublime・Atom・Dreamwaver・PhpStorm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>GitHub Desktop</p>
+                <p class="paragraph-card text-dark-white-sub">git系のアプリはこれしか利用したことがない。<br>(git系のアプリではないがiTermは使うことがある。)UIが気に入っているため今後も使い続けたい。逆にもっとおすすめのアプリがあれば知りたい。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Redmine</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">タスク管理系はほぼこれ。UIが気に入っているため今後も使い続けたい。逆にもっとおすすめのアプリがあれば知りたい。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Trello</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">ToDo系で使ったことがある。逆にもっとおすすめのアプリがあれば知りたい。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Backlog</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">プロジェクト管理系はこれしか使っていない。UIが気に入っているため今後も使い続けたい。逆にもっとおすすめのアプリがあれば知りたい。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Confluence</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">ナレッジの共有・共同編集がしやすくて気に入っている。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="m-1 bg-white-15 rounded skillBox">
+              <div class="p-3">
+                <p class="copy-paragraph fw-bold text-white mb-2 d-flex align-items-center"><span class="attribute-1">アプリ</span>Office 365</p>
+                <p class="paragraph-card text-dark-white-sub mb-3">使えて当たり前のOfficeだが、特殊スキルが身についた。<span class="text-white">HTMLメールのOutlook対応</span>だ。簡単そうに見えてかなり難しい。</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      </section>
+      <section class="p-5 bg-dark">
+        <div class="column mb-5 fadeBox">
+          <h2 class="mb-3 headline mt-n3 text-center text-white">
+            <span class="text-gradient-dark">リモート環境</span>はハイエンド。
+          </h2>
+          <p class="text-copy-2 text-dark-white-sub text-center fw-bold mb-5">
+            またコロナ禍のようなことがあって<br>世界の物流が止まろうとも<br><span class="text-white">5年は戦える</span>準備がある。
+          </p>
+          <a href=""></a>
+        </div>
 
-        <section class="p-3">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/card-01.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/card-02.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="assets/img/card-03.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-
-        <section class="p-3">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
+        <div class="row fadeBox">
+          <div class="col-lg-4 col-md-12 px-5 d-flex justify-content-center d-flex flex-column align-items-center mb-5">
+            <img src="assets/img/icon/outline/flexLineIcon-pc.svg#flexLineIcon-pc" class="w-100px d-flex justify-content-center align-items-center mb-3" alt="">
+            <p class="copy-paragraph fw-bold text-white mb-2 text-center mb-3">M1Max MacBook Pro</p>
+            <p class="font-nomal text-dark-white-sub text-center">最強爆速チップ<span class="text-gradient-dark">M1Max</span>搭載機<br>メモリも64GB積んでいる。</p>
+          </div>
+          <div class="col-lg-4 col-md-12 px-5 d-flex justify-content-center d-flex flex-column align-items-center mb-5">
+            <img src="assets/img/icon/outline/flexLineIcon-sp.svg#flexLineIcon-sp" class="w-100px d-flex justify-content-center align-items-center mb-3" alt="">
+            <p class="copy-paragraph fw-bold text-white mb-2 text-center">iPhone12 Pro</p>
+            <p class="font-nomal text-dark-white-sub text-center">未来のために<span class="text-gradient-dark">5G</span>対応機<br>まだ速さの実感がない...。<br>スタビライザーはDJI OM5 を保有。</p>
+          </div>
+          <div class="col-lg-4 col-md-12 px-5 d-flex justify-content-center d-flex flex-column align-items-center mb-5">
+            <img src="assets/img/icon/outline/flexLineIcon-camera.svg#flexLineIcon-camera" class="w-100px d-flex justify-content-center align-items-center mb-3" alt="">
+            <p class="copy-paragraph fw-bold text-white mb-2 text-center">α7RⅢ</p>
+            <p class="font-nomal text-dark-white-sub text-center"><span class="text-gradient-dark">超高画素フルサイズ</span>一眼カメラ<br>レンズは24mm、45mm、50mm、85mmを保有。<br>スタビライザーはTH-G3を保有。</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <nav class="px-3 py-1 bg-gray-1" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item text-black"><a class="text-blue" href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">プロフィール</li>
-        </ol>
-      </nav>
-      <div class="d-flex justify-content-center pt-3 border-top">
-        <a class="px-2" href="">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a class="px-2" href="">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a class="px-2" href="">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a class="px-2" href="https://www.youtube.com/">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-      </div>
-      <p class="d-flex justify-content-center pb-3 pt-1 footer__text">Copyright © 2022 Baespt. All Rights Reserved.</p>
+      <div id="footer__bottom"></div>
     </footer>
 
-    <script src="assets/js/three.min.js"></script>
-    <script src="assets/js/vanta.clouds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
     <script>
-      VANTA.CLOUDS({
+      VANTA.HALO({
         el: "#clouds",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        backgroundColor: 0x20101,
-        skyColor: 0x40b0f,
-        cloudShadowColor: 0x155996,
-        sunColor: 0x27d96f,
-        sunGlareColor: 0xed0606,
-        sunlightColor: 0xe622c8,
-        speed: 2.00
+        backgroundColor: 0x1b1b1b,
+        xOffset: 0.18
       })
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.9/lodash.min.js"></script>
+    <script>
+      var app = new Vue ({
+            el: "#app",
+            methods : {
+                loadHtml() {
+                fetch("/header.html").then((res) => {
+                  res.text().then((html) => {
+                    this.htmlContent = html;
+                    console.log(html)
+                  });
+                });
+              },
+            }
+        });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script type="text/JavaScript" src="assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".glass__card"), {
+          max: 45,
+          speed: 400,
+          glare: true,
+          "max-glare": 1,
+          perspective: 1000
+      });
+  </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+      ScrollReveal().reveal('.fadeBox', { 
+        duration: 900, // アニメーションの完了にかかる時間
+        viewFactor: 0.5, // 0~1,どれくらい見えたら実行するか
+        reset: true   // 何回もアニメーション表示するか
+      });
+      ScrollReveal().reveal('.fadeStrong', { 
+        duration: 900, 
+        viewFactor: 0.5, // 0~1,どれくらい見えたら実行するか
+        scale: 3,
+        reset: true
+      });
+      ScrollReveal().reveal('.fadeLeft', { 
+        duration: 900, 
+        viewFactor: 0.5, // 0~1,どれくらい見えたら実行するか
+        origin: 'left', 
+        distance: '50px',
+        reset: true   
+      });
+      ScrollReveal().reveal('.fadeRight', { 
+        duration: 900, 
+        viewFactor: 0.5, // 0~1,どれくらい見えたら実行するか
+        origin: 'right', 
+        distance: '50px',
+        reset: true   
+      });
+      ScrollReveal().reveal('.fadeZoom', { 
+        duration: 400, 
+        viewFactor: 0.5, // 0~1,どれくらい見えたら実行するか
+        scale: 0.1,
+        reset: true
+      });
+  </script>
 </body>
 </html>

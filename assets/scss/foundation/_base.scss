@@ -1,0 +1,23 @@
+html {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 106.25%;
+    quotes: "â€œ" "â€"
+}
+
+[lang]:lang(ja) {
+    font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+p {
+    line-height: 1.2em;
+    word-break: break-all;
+}
+
+span {
+    word-break: break-all;
+}
+
+section {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

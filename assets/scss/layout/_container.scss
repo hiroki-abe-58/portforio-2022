@@ -2,3 +2,25 @@
     margin: 0;
     padding: 0;
 }
+
+.appBox {
+    min-height: 200px;
+}
+
+.skillWrapper {
+}
+
+.skillBox {
+    min-height: 100%;
+}
+
+@media screen and (max-width:991px) {
+    .skillWrapper {
+        margin: 0;
+        padding: 0;
+    }
+
+    .skillBox {
+        min-width: 100%;
+    }
+}
