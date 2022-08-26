@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/app.min.css">
+    <!-- Google API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <nav class="p-3 py-1 bg-dark" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item text-black"><a class="text-blue" href="/">Home</a></li>
+                <li class="breadcrumb-item text-black"><a class="text-blue" href="index.html">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Vanilla-tilt.js</li>
+            </ol>
+        </nav>
+        <section class="bg__pic p-5 min-vh-100">
+            <div class="d-flex flex-column justiry-content-center align-items-center">
+                <!--復活予定
+                <h2 class="copy-big text-white mb-5">
+                    Vanilla-tilt.js
+                </h2>
+                <p class="text-copy-2 text-dark-white-sub mt-0 mb-5">
+                    Valilla-tilt.jsを使うことで以下のような3Dオブジェクトを作れる。
+                </p>-->
+                <div class="bg-glass mt-5">
+                    <div class="glass__card2">
+                        <div class="glass__card2--content">
+                            <img src="../assets/img/prof.png" alt="">
+                            <h3>Hiroki Abe</h3>
+                            <h4>Web Design Engineer</h4>
+                            <span class="border-1px w-25 d-flex mx-auto mb-4"></span>
+                            <p class="text-dark-white-sub">
+                            UX Planning<br>
+                            UI Design<br>
+                            Prototyping<br>
+                            Develop<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--復活予定
+                <span class="mt-5 border-1px w-100"></span>
+                <div class="d-flex flex-column justiry-content-center align-items-center">
+                    <h3 class="headline text-white">使用ライブラリ</h3>
+                    <a href="https://micku7zu.github.io/vanilla-tilt.js/" class="button-primary mb-4">Vanilla-tilt.js</a>
+                    <a href="https://www.youtube.com/watch?v=KLQA8TCC1iU" class="button-secondary">参考Youtube</a>
+                </div>
+            -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="p-3 py-1 bg-dark" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item text-black"><a class="text-blue" href="/">Home</a></li>
+                <li class="breadcrumb-item text-black"><a class="text-blue" href="index.html">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Vanilla-tilt.js</li>
+            </ol>
+        </nav>
+        <div id="footer__bottom"></div>
+    </footer>
+    
+    
+    <script type="text/JavaScript" src="/assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".glass__card2"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/include.js"></script>
+</body>
+</html>

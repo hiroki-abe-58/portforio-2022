@@ -1,0 +1,90 @@
+.p-speed__body {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/bg-art-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: black;
+        width: 100%;
+        height: 500vh;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+}
+
+.p-speed__title {
+    .p-speed__mainTitle {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        font-size: 50px;
+        transform: translateX(-50%);
+        color: white;
+        opacity: 0;
+        z-index: 2;
+        margin-bottom: 100px;
+    }
+    .active {
+        opacity: 1;
+        transition: all 3s;
+    }
+}
+
+.p-speed__section {
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    .p-speed__section--title {
+        position: absolute;
+        font-size: 2.3rem;
+        top: 70%;
+        z-index: 2;
+        letter-spacing: 2px;
+        transition: all 0.2s;
+        opacity: 0!important;
+        color: white;
+    }
+    .active {
+        opacity: 1!important;
+        transition: opacity 3s;
+    }
+}
+
+.p-speed__img-wrap {
+    position: relative;
+    top: 40%;
+    height: 40%;
+    width: 1px;
+    overflow: hidden;
+    opacity: 0;
+    .p-speed__img-wrap--img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40vw;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transform: scale(1.6);
+    }
+}
+
+.p-speed__img-wrap.active {
+    width: 40vw;
+    opacity: 1;
+    transition: opacity 1s, width 2s;
+}
+
+.p-speed__img-wrap.active > .p-speed__img-wrap--img {
+    transform: scale(1);
+    transition: 1s ease-out;
+}
+

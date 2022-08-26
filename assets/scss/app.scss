@@ -1,36 +1,37 @@
 // Foundation
 // ==========================================================================
 
-@use "foundation/_reset";
-@use "foundation/_base";
-@use "foundation/_mixin";
+@use "foundation/reset";
+@use "foundation/base";
+@use "foundation/mixin";
 
 // Layout
 // ==========================================================================
 
-@use "layout/_main";
-@use "layout/_header";
-@use "layout/_footer";
-@use "layout/_container";
+@use "layout/main";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/container";
 
 // Object
 // ==========================================================================
 
 // Project
 // -----------------------------------------------------------------
-@use "object/project/_glass";
+@use "object/project/glass";
+@use "object/project/animation-js";
+@use "object/project/speed";
 
 // Component
 // -----------------------------------------------------------------
-@use "object/component/_button";
-@use "object/component/_tab";
+@use "object/component/button";
+@use "object/component/tab";
 
 // Utility
 // -----------------------------------------------------------------
-
-@use "object/utility/_text";
-@use "object/utility/_color";
-@use "object/utility/_background";
-@use "object/utility/_sizing";
-@use "object/utility/_border";
-@use "object/utility/_stroke";
+@use "object/utility/text";
+@use "object/utility/color";
+@use "object/utility/background";
+@use "object/utility/sizing";
+@use "object/utility/border";
+@use "object/utility/stroke";

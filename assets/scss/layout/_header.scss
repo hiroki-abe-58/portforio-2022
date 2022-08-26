@@ -1,4 +1,6 @@
 @import "../../../assets/scss/object/utility/_color";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap);
 
 header {
     background-color: $black;
@@ -6,4 +8,172 @@ header {
 
 header>div>a>span {
     color: $skyblue!important;
+}
+
+.c-nav {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $black;
+    align-items: center;
+}
+
+.c-navLeft {
+    a {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.c-navRight {
+    display: flex;
+    padding: 17px;
+    z-index: 3;
+    a {
+        display: flex;
+        color: $text-dark-white;
+        width: fit-content;
+        margin-left: 40px;
+        font-weight: bold;
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+            transition: .2s;
+        }
+    }
+}
+
+.c-navRight__contentsWrapper {
+    p {
+        color: $text-dark-white;
+        font-size: 17px;
+        font-weight: bold;
+        width: fit-content;
+        text-align: center;
+        cursor: pointer;
+    }
+    i {
+        margin-left: 10px;
+    }
+}
+
+.c-navRight__contentsInner {
+    padding: 20px;
+    display: none;
+    a {
+        margin-bottom : 20px;
+        cursor: pointer;
+    &:last-child {
+        margin-bottom : 0px;
+    }
+        i {
+            margin-left: 10px;
+        }
+    }
+}
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width:991px) {
+    .c-navRight {
+        background-color: rgba(0,0,0,.8);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding: 20px;
+        display: none;
+        opacity: 1;
+        p {
+            margin-bottom: 40px;
+        }
+        a {
+            color: $text-dark-white;
+            margin-bottom: 40px;
+            margin-left: 0;
+            font-weight: bold;
+            text-align: center;
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+                transition: .2s;
+            }
+        }
+    }
+
+    .c-navRight.active {
+        display: flex;
+        transition: 0.3s;
+    }
+
+    #hamburger{
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+        border-radius: 5px;
+        z-index: 3;
+    }
+      
+    /*ボタン内側*/
+     #hamburger span{
+          display: inline-block;
+          transition: all .4s;/*アニメーションの設定*/
+          position: absolute;
+    }
+      
+     #hamburger span:nth-of-type(1),
+     #hamburger span:nth-of-type(3) {
+          height: 2px;
+        background: #fff;
+          width: 32px;
+          left: 10px;
+       }
+      
+     #hamburger span:nth-of-type(1) {
+        top:13px; 
+      }
+      
+     #hamburger span:nth-of-type(2) {
+        top:20px;
+        left:11px;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      
+     #hamburger span:nth-of-type(3) {
+        top:36px;
+      }
+      
+      /*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/
+     #hamburger.active span:nth-of-type(1) {
+          top: 18px;
+          left: 18px;
+          transform: translateY(6px) rotate(-45deg);
+          width: 30%;
+      }
+      
+     #hamburger.active span:nth-of-type(2) {
+        opacity: 0;
+      }
+      
+     #hamburger.active span:nth-of-type(3){
+          top: 30px;
+          left: 18px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 30%;
+      }
 }
